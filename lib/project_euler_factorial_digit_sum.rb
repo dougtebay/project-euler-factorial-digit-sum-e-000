@@ -17,10 +17,5 @@ def sum_of_digits(num)
 end
 
 def factorial_digit_sum(num)
-  sum = 0
-  num = factorial(num).to_s.split("")
-  num.each do |i|
-    sum += i.to_i
-  end
-  sum
+  sum_of_digits(factorial(num))
 end
